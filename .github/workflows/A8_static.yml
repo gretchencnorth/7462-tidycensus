@@ -26,6 +26,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
+      GITHUB_TOKEN: ${{ secrets.CENSUS_API_KEY }}
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
