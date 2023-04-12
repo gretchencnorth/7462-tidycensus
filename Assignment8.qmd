@@ -1,7 +1,9 @@
 ---
 title: "New & Improved Hennepin Co. Tidycensus Plot"
 author: "Gretchen North"
-format: html
+format: 
+  html: 
+    embed-resources: true
 editor: visual
 ---
 
