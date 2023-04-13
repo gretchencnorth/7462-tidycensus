@@ -34,6 +34,12 @@ jobs:
                any::purrr
                any::leaflet
                any::gepaf
+               any::gt
+               any::paletteer
+               any::plotly
+               any::osmdata
+               any::ggmap
+               any::tidycensus
       - name: Step 1 Render report
         uses: quarto-dev/quarto-actions/render@v2
         env:
