@@ -1,6 +1,6 @@
 on: [workflow_dispatch]
 
-name: Step 1: Render Report
+name: Step 1 Render Report
 
 jobs:
   build-deploy:
