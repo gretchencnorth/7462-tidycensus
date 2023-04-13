@@ -35,7 +35,7 @@ jobs:
                any::purrr
                any::leaflet
                any::gepaf
-      - name: Step 1: Render document
+      - name: Step 1 Render report
         uses: quarto-dev/quarto-actions/render@v2
         env:
           CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
