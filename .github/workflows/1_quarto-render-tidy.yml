@@ -1,6 +1,6 @@
 on: [workflow_dispatch]
 
-name: Render Report
+name: Step 1: Render Report
 
 jobs:
   build-deploy:
@@ -35,13 +35,13 @@ jobs:
                any::purrr
                any::leaflet
                any::gepaf
-      - name: Render document
+      - name: Step 1: Render document
         uses: quarto-dev/quarto-actions/render@v2
         env:
           CENSUS_API_KEY: ${{ secrets.CENSUS_API_KEY }}
         with:
           to: html
-          path: Assignment8.Rmd
+          path: Assignment8.qmd
       - name: Setup git config
         run: |
           git config user.name "GitHub Actions Bot"
