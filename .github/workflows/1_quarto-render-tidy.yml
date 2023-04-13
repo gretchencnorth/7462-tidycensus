@@ -32,7 +32,6 @@ jobs:
                any::lubridate
                any::googleway
                any::purrr
-               any::leaflet
                any::gepaf
                any::gt
                any::paletteer
